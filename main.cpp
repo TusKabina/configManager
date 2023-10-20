@@ -3,7 +3,7 @@
 
 
 
-int main()
+auto main() -> int
 {
 	ConfigManager::ConfigManager cfg;
 	char filePath[35] = { "C:/Users/ivanr/Documents/file.json" };
