@@ -10,7 +10,7 @@ auto main() -> int
 	
 	if (!cfg.readConfig("C:/Users/ivanr/Documents/file.json"))
 	{
-		std::cout << "jebiga nisam moga procitat...\n";
+		std::cout << "Error!\n";
 		return 1;
 	}
 	std::cout << cfg.m_intA << std::endl;
@@ -18,13 +18,10 @@ auto main() -> int
 	std::cout << cfg.m_floatC << std::endl;
 	std::cout << cfg.m_str << std::endl;
 
-	/*char field[5] = { "intA" };
-	cfg.writeConfig(filePath, field,10);*/
-
 	cfg.m_intA = 876;
 	cfg.m_doubleB = 321.321;
 	cfg.m_floatC = 1.2f;
-	cfg.m_str = "Hi Doggy!";
+	cfg.m_str = "Hello!";
 	cfg.serialize(filePath);
 
 
